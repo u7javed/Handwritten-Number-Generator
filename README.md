@@ -45,7 +45,7 @@ The dataset being used here is MNIST. The MNIST dataset contains large diversity
 
 ### Training - Epochs 0 - 25 Progression
 
-![](data/uploads/epoch_0to25_progression)
+![](data/uploads/epoch_0to25_progression.gif)
 
 ### Generate own Samples:
 
