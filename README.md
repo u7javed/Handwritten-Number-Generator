@@ -36,6 +36,14 @@ Python Files
     python generate_number.py --number 241256
     ```
     ![](data/uploads/generated_number2.png)
+    
+## Generate Numbers
+  - Step 1
+    Clone the Repo.
+  - Step 2 (optional)
+    Run train.py with hyperparameters (for more info, refer to **script_run.ipynb** and **train.py**
+  - Step 3
+    Run generate_number.py with its parameters. If you trained your own model, use the hyperparamters you used in training. If you are using the model included in the REPO, then the only parameters you need to input are the number, inverted or not, and save_directory. If you move around the included generator model, then make sure to include directory to generator parameter as well when running the script.
 
 ## Dataset
 
