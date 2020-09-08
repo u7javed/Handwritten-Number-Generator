@@ -54,7 +54,7 @@ The dataset being used here is MNIST. The MNIST dataset contains large diversity
 ### Result:
 ![](data/uploads/generated_number.png)
 
-### Input: 241256
+### Input: 1564234
 
 ### Result:
-![](data/uploads/generated_number2.png)
+![](data/uploads/generated_number3.png)
