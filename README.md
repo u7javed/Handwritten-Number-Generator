@@ -49,12 +49,17 @@ The dataset being used here is MNIST. The MNIST dataset contains large diversity
 
 ### Generate own Samples:
 
-### Input: 241256, Inverted=True
+### Input: 241256, Inverted=1
 
 ### Result:
 ![](data/uploads/generated_number.png)
 
-### Input: 1564234
+### Input: 24125681, Inverted=1
+
+### Result:
+![](data/uploads/generated_number1.png)
+
+### Input: 1564234, Inverted=0
 
 ### Result:
 ![](data/uploads/generated_number3.png)
