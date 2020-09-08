@@ -42,3 +42,19 @@ Python Files
 The dataset being used here is MNIST. The MNIST dataset contains large diversity of handwritten numbers for machine learning and deep learning purposes.
 
 ## Results
+
+### Training - Epochs 0 - 25 Progression
+
+![](data/uploads/epoch_0to25_progression)
+
+### Generate own Samples:
+
+### Input: 241256, Inverted=True
+
+### Result:
+![](data/uploads/generated_number.png)
+
+### Input: 241256
+
+### Result:
+![](data/uploads/generated_number2.png)
