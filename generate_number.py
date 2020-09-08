@@ -25,8 +25,8 @@ def show_number(number, inverted, generator, latent_size, save_directory, device
     image_grid = torchvision.utils.make_grid(generated_images.cpu().detach(), nrow=len(number), normalize=True, padding=0)
     _, axes = plt.subplots(figsize=(8, 8))
     axes.set_axis_off()
-    if inverted is True:
-        axes.imshow(1 - image_grid.permute(1, 2, 0), interpolation='nearest') 
+    if inverted:
+        axes.imshow(image_grid.permute(1, 2, 0), interpolation='nearest') 
         plt.savefig(save_directory + 'generated_number2.png', bbox_inches='tight')
     else:
         axes.imshow(1 - image_grid.permute(1, 2, 0), interpolation='nearest') 
@@ -40,7 +40,7 @@ def main():
 
     # parameters needed to enhance image
     parser.add_argument('--number', type=str, default='1234', help='number you wish to generate')
-    parser.add_argument('--inverted', type=bool, default=False, help='If you want numbers black inverted=False, else True')
+    parser.add_argument('--inverted', type=int, default=0, help='If you want numbers black inverted=0, else any number')
     parser.add_argument('--dir_to_generator', type=str, default='best_generator.pt', help='location to ideal generator file')
     parser.add_argument('--class_size', type=int, default=10, help='number of possible single digit numbers')
     parser.add_argument('--embedding_dim', type=int, default=10, help='size of embedding vectors')
@@ -51,6 +51,7 @@ def main():
 
     number = args.number
     inverted = args.inverted
+    print(inverted)
     dir_to_generator = args.dir_to_generator
     class_size = args.class_size
     embedding_dim = args.embedding_dim
