@@ -35,7 +35,7 @@ Python Files
     ```
     python generate_number.py --number 241256
     ```
-    ![](data/uploads/generated_number2.png|height=10)
+    ![](data/uploads/generated_number2.png)
 
 ## Dataset
 
